@@ -31,7 +31,7 @@ window.addEventListener('scroll', () => {
   const maxScrollTop = html.scrollHeight - window.innerHeight
   const scrollFraction = scrollTop / maxScrollTop;
   // when hits half way then opacity is 1 otherwise opacity moves towards 0
-  copy.style.opacity = scrollFraction > 0.5 ? (1 - scrollFraction) : scrollFraction * 2;
+  copy.style.opacity = scrollFraction > 0.2 ? (1 - scrollFraction) : scrollFraction * 2;
   const frameIndex = Math.min(
     frameCount - 1,
     Math.ceil(scrollFraction * frameCount)
