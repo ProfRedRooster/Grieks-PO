@@ -4,7 +4,7 @@ const canvas = document.getElementById("scrollAnimation");
 const context = canvas.getContext("2d");
 const copy = document.getElementById("copyExample");
 
-const frameCount = 100;
+const frameCount = 233;
 const currentFrame = index => (
   `https://github.com/ProfRedRooster/Grieks-PO/raw/main/images/%20${index.toString().padStart(4, '0')}.jpg`
 )
