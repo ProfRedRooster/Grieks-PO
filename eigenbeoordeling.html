@@ -14,15 +14,15 @@ body {
 }</style>
 <div class="word"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>var words = ['Onze samenwerking verliep over het algemeen goed en we hebben ons best gedaan om elke taak uit te voeren. We hebben taken verdeeld en iedereen heeft zijn bijdrage geleverd. We hebben efficiënt samengewerkt en gecommuniceerd om de website tot stand te brengen. Wat betreft de kwaliteit van ons werk, hebben we bronnen gezocht, afbeeldingen en tekeningen gemaakt en toegevoegd aan de website. We hebben ook de technische details goed verzorgd en zorgvuldig bronvermelding toegepast. We zijn tevreden met het resultaat van ons gezamenlijke project en vinden dat we onszelf een 8.5 mogen geven. We hebben hard gewerkt, waren betrokken en hebben goed samengewerkt als team. Onze inzet en de voltooiing van alle taken op een hoog niveau rechtvaardigen dit cijfer.', ' Dank u wel'],
+<script>var words = ['Onze samenwerking verliep over het algemeen goed en we hebben ons best gedaan om elke taak uit te voeren. We hebben taken verdeeld en iedereen heeft zijn bijdrage geleverd. We hebben efficiënt samengewerkt en gecommuniceerd om de website tot stand te brengen. Wat betreft de kwaliteit van ons werk, hebben we bronnen gezocht, afbeeldingen en tekeningen gemaakt en toegevoegd aan de website. We hebben ook de technische details goed verzorgd en zorgvuldig bronvermelding toegepast. We zijn tevreden met het resultaat van ons gezamenlijke project en vinden dat we onszelf een 8.5 mogen geven. We hebben hard gewerkt, waren betrokken en hebben goed samengewerkt als team. Onze inzet en de voltooiing van alle taken op een hoog niveau rechtvaardigen dit cijfer. Dank u wel'],
     part,
     i = 0,
     offset = 0,
-    len = words.length,
+    len = words.length, 
     forwards = true,
     skip_count = 0,
     skip_delay = 15,
-    speed = 30;
+    speed = 20
 var wordflick = function () {
   setInterval(function () {
     if (forwards) {
@@ -50,7 +50,7 @@ var wordflick = function () {
         offset++;
       }
       else {
-        offset--;
+
       }
     }
     $('.word').text(part);
